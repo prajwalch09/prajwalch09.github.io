@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a Computer Science Engineering student learning web development, Python, and AI/ML.">
+  <title>Prajwal | My Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.7;
+    }
+
+    .container {
+      width: min(100% - 36px, 1000px);
+      margin: auto;
+    }
+
+    header {
+      background: #111827;
+      border-bottom: 1px solid #263247;
+      padding: 18px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      color: #60a5fa;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 85px 0 65px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 7vw, 4rem);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #60a5fa;
+    }
+
+    .hero p {
+      color: #b6c2d2;
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 11px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 5px;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border: 1px solid #60a5fa;
+      color: #93c5fd;
+    }
+
+    section {
+      padding: 48px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: #60a5fa;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .about {
+      max-width: 750px;
+      text-align: center;
+      margin: auto;
+      color: #cbd5e1;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #263247;
+      border-radius: 12px;
+      padding: 23px;
+      overflow-wrap: anywhere;
+    }
+
+    .card h3 {
+      color: #93c5fd;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+    }
+
+    .card a {
+      color: #60a5fa;
+      display: inline-block;
+      margin-top: 12px;
+    }
+
+    .contact {
+      text-align: center;
+      color: #cbd5e1;
+    }
+
+    footer {
+      text-align: center;
+      background: #111827;
+      border-top: 1px solid #263247;
+      color: #94a3b8;
+      padding: 22px 12px;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 480px) {
+      nav {
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero {
+        padding: 60px 0 45px;
+      }
+
+      section {
+        padding: 35px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Main navigation">
+        <div class="logo">Prajwal.dev</div>
+        <div>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Hello, I'm <span>Prajwal</span></h1>
+        <p>
+          Computer Science Engineering student learning
+          Python, web development, and Artificial Intelligence.
+          I enjoy building projects and learning new technologies.
+        </p>
+        <a class="button" href="#projects">Explore My Projects</a>
+        <a class="button secondary"
+           href="https://github.com/prajwalch09"
+           target="_blank" rel="noopener noreferrer">
+          My GitHub
+        </a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="about">
+          I am a Computer Science Engineering student developing
+          my programming and problem-solving skills. My current
+          interests include Python, HTML, CSS, and AI/ML.
+          My goal is to build useful projects and grow as a developer.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills">
+          <article class="card">
+            <h3>HTML</h3>
+            <p>Creating the structure of websites.</p>
+          </article>
+          <article class="card">
+            <h3>CSS</h3>
+            <p>Designing attractive and responsive pages.</p>
+          </article>
+          <article class="card">
+            <h3>Python</h3>
+            <p>Learning programming logic and problem solving.</p>
+          </article>
+          <article class="card">
+            <h3>AI / ML</h3>
+            <p>Exploring artificial intelligence and machine learning.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects">
+          <article class="card">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive website to introduce myself and share my work.</p>
+            <a href="https://github.com/prajwalch09/prajwalch09.github.io">
+              View repository
+            </a>
+          </article>
+          <article class="card">
+            <h3>Smart Campus Assistant</h3>
+            <p>A student project idea to help students find campus information.</p>
+            <p><strong>Status:</strong> Planned</p>
+          </article>
+          <article class="card">
+            <h3>Python Practice</h3>
+            <p>Small programs to improve my Python and logical thinking skills.</p>
+            <a href="https://github.com/prajwalch09">
+              Explore GitHub
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact">
+        <h2 class="section-title">Contact Me</h2>
+        <p>Want to connect or see what I am learning?</p>
+        <a class="button"
+           href="https://github.com/prajwalch09"
+           target="_blank" rel="noopener noreferrer">
+          Visit My GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Prajwal. Built with HTML and CSS.</p>
+  </footer>
+</body>
+</html>
